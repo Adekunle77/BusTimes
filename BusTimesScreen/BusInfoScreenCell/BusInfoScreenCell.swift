@@ -14,6 +14,7 @@ class BusInfoScreenCell: UICollectionViewCell {
     @IBOutlet weak var arrivalTime: UILabel!
     @IBOutlet weak var busLocation: UILabel!
     @IBOutlet weak var busStopDistance: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
