@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520221A1B6B400D7073F /* TravelInfomation.swift */; };
+		3364520521A1B75600D7073F /* HttpTravelInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */; };
 		33884B31219D7B940080A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B30219D7B940080A196 /* AppDelegate.swift */; };
 		33884B33219D7B940080A196 /* BusInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B32219D7B940080A196 /* BusInfoScreen.swift */; };
 		33884B36219D7B940080A196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33884B34219D7B940080A196 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 		33884B52219D83A60080A196 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33884B51219D83A60080A196 /* Default-568h@2x.png */; };
 		33884B56219D89EB0080A196 /* BusInfoScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B54219D89EB0080A196 /* BusInfoScreenCell.swift */; };
 		33884B57219D89EB0080A196 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33884B55219D89EB0080A196 /* CollectionViewCell.xib */; };
+		33DD3277219E025700C8C536 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD3276219E025700C8C536 /* DataSource.swift */; };
+		33DD327A219E08EC00C8C536 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD3279219E08EC00C8C536 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3364520221A1B6B400D7073F /* TravelInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfomation.swift; sourceTree = "<group>"; };
+		3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTravelInfoRequest.swift; sourceTree = "<group>"; };
 		33884B2D219D7B940080A196 /* BusTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33884B30219D7B940080A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33884B32219D7B940080A196 /* BusInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoScreen.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 		33884B51219D83A60080A196 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		33884B54219D89EB0080A196 /* BusInfoScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoScreenCell.swift; sourceTree = "<group>"; };
 		33884B55219D89EB0080A196 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		33DD3276219E025700C8C536 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		33DD3279219E08EC00C8C536 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +73,10 @@
 		33884B24219D7B940080A196 = {
 			isa = PBXGroup;
 			children = (
+				33DD3278219E083E00C8C536 /* Helpers */,
 				33884B2F219D7B940080A196 /* BusTimesScreen */,
+				33DD327B219E0A0A00C8C536 /* Entities */,
+				33DD3275219DFD0E00C8C536 /* Services */,
 				33884B50219D7C7D0080A196 /* SupportingFiles */,
 				33884B44219D7B950080A196 /* BusTimesTests */,
 				33884B2E219D7B940080A196 /* Products */,
@@ -119,6 +130,31 @@
 				33884B55219D89EB0080A196 /* CollectionViewCell.xib */,
 			);
 			path = BusInfoScreenCell;
+			sourceTree = "<group>";
+		};
+		33DD3275219DFD0E00C8C536 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33DD3276219E025700C8C536 /* DataSource.swift */,
+				3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		33DD3278219E083E00C8C536 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33DD3279219E08EC00C8C536 /* Results.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		33DD327B219E0A0A00C8C536 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3364520221A1B6B400D7073F /* TravelInfomation.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33884B33219D7B940080A196 /* BusInfoScreen.swift in Sources */,
+				3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */,
 				33884B31219D7B940080A196 /* AppDelegate.swift in Sources */,
+				33DD3277219E025700C8C536 /* DataSource.swift in Sources */,
 				33884B56219D89EB0080A196 /* BusInfoScreenCell.swift in Sources */,
+				3364520521A1B75600D7073F /* HttpTravelInfoRequest.swift in Sources */,
+				33DD327A219E08EC00C8C536 /* Results.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
