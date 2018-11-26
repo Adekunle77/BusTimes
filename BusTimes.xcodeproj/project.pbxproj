@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33269E4B21AC671D00BBD04A /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33269E4A21AC671D00BBD04A /* AuthorizationService.swift */; };
 		3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520221A1B6B400D7073F /* TravelInfomation.swift */; };
 		3364520521A1B75600D7073F /* HttpTravelInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */; };
 		3364520821A3009200D7073F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520721A3009200D7073F /* LocationService.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33269E4A21AC671D00BBD04A /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		3364520221A1B6B400D7073F /* TravelInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfomation.swift; sourceTree = "<group>"; };
 		3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTravelInfoRequest.swift; sourceTree = "<group>"; };
 		3364520721A3009200D7073F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3364520721A3009200D7073F /* LocationService.swift */,
+				33269E4A21AC671D00BBD04A /* AuthorizationService.swift */,
 			);
 			path = "Location Services";
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33269E4B21AC671D00BBD04A /* AuthorizationService.swift in Sources */,
 				33884B33219D7B940080A196 /* BusInfoView.swift in Sources */,
 				3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */,
 				3364520821A3009200D7073F /* LocationService.swift in Sources */,

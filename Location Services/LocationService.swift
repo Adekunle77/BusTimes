@@ -25,35 +25,35 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     init(onLocationUpdate: @escaping (Coordinate) -> ()) {
         self.onLocationUpdate = onLocationUpdate
         super.init()
-        status = .notDetermined
+       // status = .notDetermined
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
-        if CLLocationManager.locationServicesEnabled() {
-            switch CLLocationManager.authorizationStatus() {
-            case .notDetermined:
-                status = .notDetermined
-                self.locationManager.requestWhenInUseAuthorization()
-            case .restricted, .denied:
-                status = .denied
-            case .authorizedAlways, .authorizedWhenInUse:
-                status = .authorised
-            }
-        } else {
-            status = .disabled
-        }
+//        if CLLocationManager.locationServicesEnabled() {
+//            switch CLLocationManager.authorizationStatus() {
+//            case .notDetermined:
+//                status = .notDetermined
+//                self.locationManager.requestWhenInUseAuthorization()
+//            case .restricted, .denied:
+//                status = .denied
+//            case .authorizedAlways, .authorizedWhenInUse:
+//                status = .authorised
+//            }
+//        } else {
+//            status = .disabled
+//        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        switch status {
-        case .notDetermined, .restricted, .denied:
-            self.status = .notDetermined
-    
-        case .authorizedAlways, .authorizedWhenInUse:
-            self.status = .authorised
-            self.startLocationManager()
-        }
+//        switch status {
+//        case .notDetermined, .restricted, .denied:
+//            self.status = .notDetermined
+//    
+//        case .authorizedAlways, .authorizedWhenInUse:
+//            self.status = .authorised
+//            self.startLocationManager()
+//        }
     }
     
     func startLocationManager() {
