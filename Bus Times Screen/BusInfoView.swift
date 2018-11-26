@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import CoreLocation
 
-class BusInfoScreen: UIViewController {
-
+class BusInfoView: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
+
+
 
