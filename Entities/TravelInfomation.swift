@@ -13,9 +13,10 @@ struct TravellInfomation: Codable {
 }
 
 struct BusInfo: Codable {
+    
     var naptanId: String
     var commonName: String
-    var distance: Int
+    var distance: Double
     var additionalProperties: [AdditionalProperties]
 }
 

@@ -8,11 +8,11 @@
 
 import Foundation
 
-typealias DataSourceCompletionHandler = (_ results: Results<[TravellInfomation], DataSourceError> ) -> Void
+typealias DataSourceCompletionHandler = (_ results: Results<[BusInfo], DataSourceError> ) -> Void
 
 enum DataSourceError: Error {
     case fatel(String)
-    case network(String)
+    case network(Error)
     case noData
     case dataError(Error)
     case jsonParseError(Error)

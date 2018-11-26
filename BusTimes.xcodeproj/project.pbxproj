@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520221A1B6B400D7073F /* TravelInfomation.swift */; };
 		3364520521A1B75600D7073F /* HttpTravelInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */; };
+		3364520821A3009200D7073F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520721A3009200D7073F /* LocationService.swift */; };
 		33884B31219D7B940080A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B30219D7B940080A196 /* AppDelegate.swift */; };
-		33884B33219D7B940080A196 /* BusInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B32219D7B940080A196 /* BusInfoScreen.swift */; };
+		33884B33219D7B940080A196 /* BusInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B32219D7B940080A196 /* BusInfoView.swift */; };
 		33884B36219D7B940080A196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33884B34219D7B940080A196 /* Main.storyboard */; };
 		33884B38219D7B950080A196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33884B37219D7B950080A196 /* Assets.xcassets */; };
 		33884B3B219D7B950080A196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33884B39219D7B950080A196 /* LaunchScreen.storyboard */; };
@@ -35,9 +36,10 @@
 /* Begin PBXFileReference section */
 		3364520221A1B6B400D7073F /* TravelInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfomation.swift; sourceTree = "<group>"; };
 		3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTravelInfoRequest.swift; sourceTree = "<group>"; };
+		3364520721A3009200D7073F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		33884B2D219D7B940080A196 /* BusTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33884B30219D7B940080A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33884B32219D7B940080A196 /* BusInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoScreen.swift; sourceTree = "<group>"; };
+		33884B32219D7B940080A196 /* BusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoView.swift; sourceTree = "<group>"; };
 		33884B35219D7B940080A196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33884B37219D7B950080A196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33884B3A219D7B950080A196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,14 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3364520621A2EDAC00D7073F /* Location Services */ = {
+			isa = PBXGroup;
+			children = (
+				3364520721A3009200D7073F /* LocationService.swift */,
+			);
+			path = "Location Services";
+			sourceTree = "<group>";
+		};
 		33884B24219D7B940080A196 = {
 			isa = PBXGroup;
 			children = (
 				33DD3278219E083E00C8C536 /* Helpers */,
-				33884B2F219D7B940080A196 /* BusTimesScreen */,
+				33884B2F219D7B940080A196 /* Bus Times Screen */,
+				3364520621A2EDAC00D7073F /* Location Services */,
 				33DD327B219E0A0A00C8C536 /* Entities */,
 				33DD3275219DFD0E00C8C536 /* Services */,
-				33884B50219D7C7D0080A196 /* SupportingFiles */,
+				33884B50219D7C7D0080A196 /* Supporting Files */,
 				33884B44219D7B950080A196 /* BusTimesTests */,
 				33884B2E219D7B940080A196 /* Products */,
 			);
@@ -92,14 +103,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		33884B2F219D7B940080A196 /* BusTimesScreen */ = {
+		33884B2F219D7B940080A196 /* Bus Times Screen */ = {
 			isa = PBXGroup;
 			children = (
-				33884B32219D7B940080A196 /* BusInfoScreen.swift */,
+				33884B32219D7B940080A196 /* BusInfoView.swift */,
 				33884B34219D7B940080A196 /* Main.storyboard */,
 				33884B53219D88B50080A196 /* BusInfoScreenCell */,
 			);
-			path = BusTimesScreen;
+			path = "Bus Times Screen";
 			sourceTree = "<group>";
 		};
 		33884B44219D7B950080A196 /* BusTimesTests */ = {
@@ -111,7 +122,7 @@
 			path = BusTimesTests;
 			sourceTree = "<group>";
 		};
-		33884B50219D7C7D0080A196 /* SupportingFiles */ = {
+		33884B50219D7C7D0080A196 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				33884B51219D83A60080A196 /* Default-568h@2x.png */,
@@ -120,7 +131,7 @@
 				33884B39219D7B950080A196 /* LaunchScreen.storyboard */,
 				33884B3C219D7B950080A196 /* Info.plist */,
 			);
-			path = SupportingFiles;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		33884B53219D88B50080A196 /* BusInfoScreenCell */ = {
@@ -260,8 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33884B33219D7B940080A196 /* BusInfoScreen.swift in Sources */,
+				33884B33219D7B940080A196 /* BusInfoView.swift in Sources */,
 				3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */,
+				3364520821A3009200D7073F /* LocationService.swift in Sources */,
 				33884B31219D7B940080A196 /* AppDelegate.swift in Sources */,
 				33DD3277219E025700C8C536 /* DataSource.swift in Sources */,
 				33884B56219D89EB0080A196 /* BusInfoScreenCell.swift in Sources */,
@@ -428,15 +440,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7VRVBX4U9;
-				INFOPLIST_FILE = BusTimes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.akunle.BusTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,15 +461,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7VRVBX4U9;
-				INFOPLIST_FILE = BusTimes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.akunle.BusTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
