@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33269E4B21AC671D00BBD04A /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33269E4A21AC671D00BBD04A /* AuthorizationService.swift */; };
+		3314541E21AD424F00C4D438 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3314541D21AD424F00C4D438 /* SaveData.swift */; };
+		33269E4D21AC7C2700BBD04A /* BusInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33269E4C21AC7C2700BBD04A /* BusInfoViewModel.swift */; };
+		3359321921DBB604001339B6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3359321821DBB604001339B6 /* BusStop.swift */; };
 		3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520221A1B6B400D7073F /* TravelInfomation.swift */; };
 		3364520521A1B75600D7073F /* HttpTravelInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */; };
 		3364520821A3009200D7073F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364520721A3009200D7073F /* LocationService.swift */; };
+		336F250C21C8DFE0005183F9 /* HttpArrivalTimeReguest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F250B21C8DFE0005183F9 /* HttpArrivalTimeReguest.swift */; };
 		33884B31219D7B940080A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B30219D7B940080A196 /* AppDelegate.swift */; };
 		33884B33219D7B940080A196 /* BusInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B32219D7B940080A196 /* BusInfoView.swift */; };
 		33884B36219D7B940080A196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33884B34219D7B940080A196 /* Main.storyboard */; };
@@ -20,6 +23,8 @@
 		33884B52219D83A60080A196 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33884B51219D83A60080A196 /* Default-568h@2x.png */; };
 		33884B56219D89EB0080A196 /* BusInfoScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33884B54219D89EB0080A196 /* BusInfoScreenCell.swift */; };
 		33884B57219D89EB0080A196 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33884B55219D89EB0080A196 /* CollectionViewCell.xib */; };
+		3389D4BC21C26AED00B3D4F1 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389D4BB21C26AED00B3D4F1 /* PlaceAnnotation.swift */; };
+		3390B52621AEABF1005C4DDE /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390B52521AEABF1005C4DDE /* Coordinates.swift */; };
 		33DD3277219E025700C8C536 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD3276219E025700C8C536 /* DataSource.swift */; };
 		33DD327A219E08EC00C8C536 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD3279219E08EC00C8C536 /* Results.swift */; };
 /* End PBXBuildFile section */
@@ -35,10 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		33269E4A21AC671D00BBD04A /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		3314541D21AD424F00C4D438 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		33269E4C21AC7C2700BBD04A /* BusInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoViewModel.swift; sourceTree = "<group>"; };
+		3359321821DBB604001339B6 /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 		3364520221A1B6B400D7073F /* TravelInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInfomation.swift; sourceTree = "<group>"; };
 		3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTravelInfoRequest.swift; sourceTree = "<group>"; };
 		3364520721A3009200D7073F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		336F250B21C8DFE0005183F9 /* HttpArrivalTimeReguest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpArrivalTimeReguest.swift; sourceTree = "<group>"; };
 		33884B2D219D7B940080A196 /* BusTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33884B30219D7B940080A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33884B32219D7B940080A196 /* BusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoView.swift; sourceTree = "<group>"; };
@@ -52,6 +60,8 @@
 		33884B51219D83A60080A196 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		33884B54219D89EB0080A196 /* BusInfoScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoScreenCell.swift; sourceTree = "<group>"; };
 		33884B55219D89EB0080A196 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		3389D4BB21C26AED00B3D4F1 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		3390B52521AEABF1005C4DDE /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		33DD3276219E025700C8C536 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		33DD3279219E08EC00C8C536 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,11 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3314541C21AD413700C4D438 /* DATA BANK */ = {
+			isa = PBXGroup;
+			children = (
+				3314541D21AD424F00C4D438 /* SaveData.swift */,
+				3359321821DBB604001339B6 /* BusStop.swift */,
+			);
+			path = "DATA BANK";
+			sourceTree = "<group>";
+		};
 		3364520621A2EDAC00D7073F /* Location Services */ = {
 			isa = PBXGroup;
 			children = (
 				3364520721A3009200D7073F /* LocationService.swift */,
-				33269E4A21AC671D00BBD04A /* AuthorizationService.swift */,
 			);
 			path = "Location Services";
 			sourceTree = "<group>";
@@ -88,6 +106,7 @@
 			children = (
 				33DD3278219E083E00C8C536 /* Helpers */,
 				33884B2F219D7B940080A196 /* Bus Times Screen */,
+				3314541C21AD413700C4D438 /* DATA BANK */,
 				3364520621A2EDAC00D7073F /* Location Services */,
 				33DD327B219E0A0A00C8C536 /* Entities */,
 				33DD3275219DFD0E00C8C536 /* Services */,
@@ -110,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				33884B32219D7B940080A196 /* BusInfoView.swift */,
+				33269E4C21AC7C2700BBD04A /* BusInfoViewModel.swift */,
 				33884B34219D7B940080A196 /* Main.storyboard */,
 				33884B53219D88B50080A196 /* BusInfoScreenCell */,
 			);
@@ -151,6 +171,7 @@
 			children = (
 				33DD3276219E025700C8C536 /* DataSource.swift */,
 				3364520421A1B75600D7073F /* HttpTravelInfoRequest.swift */,
+				336F250B21C8DFE0005183F9 /* HttpArrivalTimeReguest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -159,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				33DD3279219E08EC00C8C536 /* Results.swift */,
+				3390B52521AEABF1005C4DDE /* Coordinates.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -167,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3364520221A1B6B400D7073F /* TravelInfomation.swift */,
+				3389D4BB21C26AED00B3D4F1 /* PlaceAnnotation.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -221,6 +244,11 @@
 				TargetAttributes = {
 					33884B2C219D7B940080A196 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					33884B40219D7B950080A196 = {
 						CreatedOnToolsVersion = 10.1;
@@ -274,13 +302,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33269E4B21AC671D00BBD04A /* AuthorizationService.swift in Sources */,
 				33884B33219D7B940080A196 /* BusInfoView.swift in Sources */,
 				3364520321A1B6B400D7073F /* TravelInfomation.swift in Sources */,
+				3390B52621AEABF1005C4DDE /* Coordinates.swift in Sources */,
+				33269E4D21AC7C2700BBD04A /* BusInfoViewModel.swift in Sources */,
+				3389D4BC21C26AED00B3D4F1 /* PlaceAnnotation.swift in Sources */,
 				3364520821A3009200D7073F /* LocationService.swift in Sources */,
 				33884B31219D7B940080A196 /* AppDelegate.swift in Sources */,
+				3359321921DBB604001339B6 /* BusStop.swift in Sources */,
 				33DD3277219E025700C8C536 /* DataSource.swift in Sources */,
+				336F250C21C8DFE0005183F9 /* HttpArrivalTimeReguest.swift in Sources */,
 				33884B56219D89EB0080A196 /* BusInfoScreenCell.swift in Sources */,
+				3314541E21AD424F00C4D438 /* SaveData.swift in Sources */,
 				3364520521A1B75600D7073F /* HttpTravelInfoRequest.swift in Sources */,
 				33DD327A219E08EC00C8C536 /* Results.swift in Sources */,
 			);
@@ -446,14 +479,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K7VRVBX4U9;
+				DEVELOPMENT_TEAM = ANGD9W3JT9;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.akunle.BusTimes;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.aka.BusTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -467,14 +500,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K7VRVBX4U9;
+				DEVELOPMENT_TEAM = ANGD9W3JT9;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.akunle.BusTimes;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.aka.BusTimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

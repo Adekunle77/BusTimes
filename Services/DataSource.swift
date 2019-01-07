@@ -10,6 +10,8 @@ import Foundation
 
 typealias DataSourceCompletionHandler = (_ results: Results<[BusInfo], DataSourceError> ) -> Void
 
+typealias BusDataSourceCompletionHandler = (_ results: Results<[BusTimes], DataSourceError> ) -> Void 
+
 enum DataSourceError: Error {
     case fatel(String)
     case network(Error)
@@ -21,5 +23,9 @@ enum DataSourceError: Error {
 
 protocol API {
     func fetchAPIData(completion: @escaping DataSourceCompletionHandler)
+    
 }
 
+protocol ArrivalTimeAPI {
+    func fetchBusData(busStopID: String, completion: @escaping BusDataSourceCompletionHandler)
+}
