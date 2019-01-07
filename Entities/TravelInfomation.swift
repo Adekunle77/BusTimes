@@ -18,8 +18,31 @@ struct BusInfo: Codable {
     var commonName: String
     var distance: Double
     var additionalProperties: [AdditionalProperties]
+    var lat: Double
+    var lon: Double
+    var lines: [Lines]
+    
 }
 
 struct AdditionalProperties: Codable {
     var value: String
+    var key: String
 }
+
+struct Lines: Codable {
+    //var id: String
+    var name: String
+    //var uri: String
+}
+
+
+struct BusArrivalData: Codable {
+    var busTimes: [BusTimes]
+}
+
+struct BusTimes: Codable {
+    var timeToStation: Int
+    var stationName: String
+    var lineName: String 
+}
+
