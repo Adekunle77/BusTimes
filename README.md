@@ -1,11 +1,9 @@
 # Bus Times 
 Using Transport For London’s API, this app gives users bus information, of the local bus stops within a 300 radius. The app opens with a map of where the user is currently. Annotations pins are displayed on the map, that represent each bus stop. Each annotation displays the next bus to arrive, and with the number of minutes till it arrives. 
 
-<img width="355" alt="Screenshot 2019-04-03 14 39 44" src="https://user-images.githubusercontent.com/14952997/55483467-8c0a3e80-561e-11e9-981f-266948fdd614.png">
-
 ## TFL API
 TFL provides serval REST API’s, from accident information to air quality, bike points and bus and the London Underground. To use the API, latitude and longitude coordinates are required to the API. For information on the TLF’s API, visit the TLF’s website at https://api.tfl.gov.uk/ . 
-
+<img width="313" alt="Screenshot 2019-04-03 14 45 50" src="https://user-images.githubusercontent.com/14952997/55484036-aa246e80-561f-11e9-94af-5ac4e3da48e4.png">
 ## Development 
 Core Location Framework – 
 To develop this app, Core Location framework is used, to get the user’s current latitude and longitude, which is used make an REST API requests, to get all the local bus stops within where the user is. 
