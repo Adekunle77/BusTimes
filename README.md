@@ -3,7 +3,9 @@ Using Transport For London’s API, this app gives users bus information, of the
 
 ## TFL API
 TFL provides serval REST API’s, from accident information to air quality, bike points and bus and the London Underground. To use the API, latitude and longitude coordinates are required to the API. For information on the TLF’s API, visit the TLF’s website at https://api.tfl.gov.uk/ . 
-<img width="313" alt="Screenshot 2019-04-03 14 45 50" src="https://user-images.githubusercontent.com/14952997/55484036-aa246e80-561f-11e9-94af-5ac4e3da48e4.png">
+
+<img width="341" alt="Screenshot 2019-04-03 14 53 50" src="https://user-images.githubusercontent.com/14952997/55484401-536b6480-5620-11e9-95c7-6ebba8eb9e51.png">
+
 ## Development 
 Core Location Framework – 
 To develop this app, Core Location framework is used, to get the user’s current latitude and longitude, which is used make an REST API requests, to get all the local bus stops within where the user is. 
