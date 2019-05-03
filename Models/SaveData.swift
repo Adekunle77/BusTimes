@@ -81,7 +81,6 @@ class SaveData {
         })
     }
     
-    
     func saveBusStopData() {
         let busStopData = self.savedDATA
             let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: busStopData)
@@ -90,7 +89,6 @@ class SaveData {
 
     }
 
-    
     func loadBusStopData() {
             guard let data = UserDefaults.standard.object(forKey: "busStopData") as? NSData else {
                 print("'places' not found in UserDefaults")

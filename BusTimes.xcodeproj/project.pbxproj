@@ -84,13 +84,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3314541C21AD413700C4D438 /* DATA BANK */ = {
+		3314541C21AD413700C4D438 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3314541D21AD424F00C4D438 /* SaveData.swift */,
 				3359321821DBB604001339B6 /* BusStop.swift */,
 			);
-			path = "DATA BANK";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3364520621A2EDAC00D7073F /* Location Services */ = {
@@ -106,7 +106,7 @@
 			children = (
 				33DD3278219E083E00C8C536 /* Helpers */,
 				33884B2F219D7B940080A196 /* Bus Times Screen */,
-				3314541C21AD413700C4D438 /* DATA BANK */,
+				3314541C21AD413700C4D438 /* Models */,
 				3364520621A2EDAC00D7073F /* Location Services */,
 				33DD327B219E0A0A00C8C536 /* Entities */,
 				33DD3275219DFD0E00C8C536 /* Services */,
