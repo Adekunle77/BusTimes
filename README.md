@@ -14,7 +14,7 @@ To develop this app, Core Location framework is used, to get the user’s curren
 I use Codable to parse the Json data that is retrieved, which provides bus information for each stop, such as the latitude and longitude coordinates of the stop, buses, and arrival time. 
 
 ## Mapkit Framework 
-mapkit Frameworkis used to display a map, with the user’s current location and annotation pins which represent bus stops. 
+Mapkit Frameworkis used to display a map, with the user’s current location and annotation pins which represent bus stops. 
 
 ## UserDefaults 
 UserDefaults is used to save the user’s location, bus stops and the information of each stop. I used UserDefaults, because of the ease of use, plus the app will be saving small amount of data. 
