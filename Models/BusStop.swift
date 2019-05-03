@@ -17,8 +17,7 @@ class BusStop: NSObject, NSCoding {
     var distance: Double
     var busesArray: [String]
     var arrivalTimes: [Int]
-    // direction of bus
-    
+
     init(stopName: String, stopID: String, lat: Double, long: Double, distance: Double, busesArray: [String], arrivalTimes: [Int]) {
         self.stopName = stopName
         self.stopID = stopID

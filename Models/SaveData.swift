@@ -62,7 +62,6 @@ class SaveData {
         
     }
     
-    
     private func getBusArrivalTimes(busID: String, then completion: @escaping ([BusTimes]) -> Void) {
         
         self.busesArrivalTime.fetchBusData(busStopID: busID, completion: { result in
