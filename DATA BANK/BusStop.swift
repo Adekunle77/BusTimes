@@ -15,18 +15,20 @@ class BusStop: NSObject, NSCoding {
     var lat: Double
     var long: Double
     var distance: Double
-    var busesArray: [String]
-    var arrivalTimes: [Int]
-
-    init(stopName: String, stopID: String, lat: Double, long: Double, distance: Double, busesArray: [String], arrivalTimes: [Int]) {
+    var buses: [Buses]
+    
+    init(stopName: String,
+         stopID: String,
+         lat: Double,
+         long: Double,
+         distance: Double,
+         buses: [Buses]) {
         self.stopName = stopName
         self.stopID = stopID
         self.lat = lat
         self.long = long
         self.distance = distance
-        self.busesArray = busesArray
-        self.arrivalTimes = arrivalTimes
-        
+        self.buses = buses
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
@@ -35,10 +37,12 @@ class BusStop: NSObject, NSCoding {
         let lat = aDecoder.decodeDouble(forKey: "lat") as Double
         let long = aDecoder.decodeDouble(forKey: "long") as Double
         let distance = aDecoder.decodeDouble(forKey: "distance") as Double
-        let busesArray = aDecoder.decodeObject(forKey: "busesArray") as? [String] ?? [""]
-        let arrivalTimes = aDecoder.decodeObject(forKey: "arrivalTimes") as? [Int] ?? []
-        
-        self.init(stopName: stopName, stopID: stopID, lat: lat, long: long, distance: distance, busesArray: busesArray, arrivalTimes: arrivalTimes)
+        let buses = aDecoder.decodeObject(forKey: "buses") as? [Buses] ?? []
+        self.init(stopName: stopName,
+                  stopID: stopID,
+                  lat: lat, long: long,
+                  distance: distance,
+                  buses: buses)
     }
     
     func encode(with aCoder: NSCoder)  {
@@ -47,9 +51,7 @@ class BusStop: NSObject, NSCoding {
         aCoder.encode(lat, forKey: "lat")
         aCoder.encode(long, forKey: "long")
         aCoder.encode(distance, forKey: "distance")
-        aCoder.encode(busesArray, forKey: "busesArray")
-        aCoder.encode(arrivalTimes, forKey: "arrivalTimes")
-        
+        aCoder.encode(buses, forKey: "buses")
     }
     
 }

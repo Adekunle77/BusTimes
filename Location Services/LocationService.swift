@@ -14,7 +14,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     private var didReceiveLocation = false
     private let locationManager = CLLocationManager()
     var currentCoordinate: Coordinate?
-   
+    
     enum LocationServiceStatus {
         case notDetermined, disabled, denied, authorised
     }
@@ -62,7 +62,6 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ coreLocationManager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-      
         if didReceiveLocation {
             return
         }

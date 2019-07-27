@@ -1,70 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bus Info View-->
+        <!--Bus Info View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BusInfoView" customModule="BusTimes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BusInfoViewController" customModule="BusTimes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kdD-Ck-ld5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TO1-94-GWg">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="19c-i0-vCM">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8rP-nV-kdC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3yu-8B-aOx"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoA-hi-fGE">
+                                <rect key="frame" x="132" y="81" width="175" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getlatestBusInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BXL-rt-n33"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kdD-Ck-ld5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0n7-8Z-brj"/>
-                            <constraint firstItem="8rP-nV-kdC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3YN-4t-Seu"/>
-                            <constraint firstItem="8rP-nV-kdC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EIm-Gu-7UG"/>
-                            <constraint firstItem="8rP-nV-kdC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ENE-KW-OcC"/>
-                            <constraint firstItem="8rP-nV-kdC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HUY-7d-G8P"/>
-                            <constraint firstItem="kdD-Ck-ld5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZMQ-Ut-bUo"/>
-                            <constraint firstItem="kdD-Ck-ld5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wjj-59-Leh"/>
-                            <constraint firstItem="kdD-Ck-ld5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ygB-jA-iVr"/>
+                            <constraint firstItem="8rP-nV-kdC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Zc-fo-0Cf"/>
+                            <constraint firstItem="8rP-nV-kdC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3TT-ml-ABg"/>
+                            <constraint firstItem="8rP-nV-kdC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6pX-oY-v3w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SoA-hi-fGE" secondAttribute="trailing" constant="107" id="B17-5d-grV"/>
+                            <constraint firstItem="SoA-hi-fGE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="CLh-32-Jtk"/>
+                            <constraint firstItem="8rP-nV-kdC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="Jho-KL-6EP"/>
+                            <constraint firstItem="SoA-hi-fGE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="qtu-6l-ead"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="8rP-nV-kdC" id="PKK-co-Nb3"/>
+                        <outlet property="refreshButton" destination="SoA-hi-fGE" id="agy-Q6-Ukj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="136.23188405797103" y="131.91964285714286"/>
         </scene>
     </scenes>
 </document>

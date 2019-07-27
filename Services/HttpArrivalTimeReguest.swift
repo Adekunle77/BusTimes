@@ -25,9 +25,8 @@ class HttpArrivalTimeReguest: ArrivalTimeAPI {
                 }
                 return
             }
-            
             do {
-                let busArrivalData = try JSONDecoder().decode([BusTimes].self, from: data)
+                let busArrivalData = try JSONDecoder().decode([StopDetails].self, from: data)
                 let parsedResult = busArrivalData
                 DispatchQueue.main.async {
                     completion(Results.success(parsedResult))

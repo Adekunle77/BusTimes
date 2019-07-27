@@ -10,7 +10,7 @@ import Foundation
 
 typealias DataSourceCompletionHandler = (_ results: Results<[BusInfo], DataSourceError> ) -> Void
 
-typealias BusDataSourceCompletionHandler = (_ results: Results<[BusTimes], DataSourceError> ) -> Void 
+typealias BusDataSourceCompletionHandler = (_ results: Results<[StopDetails], DataSourceError> ) -> Void 
 
 enum DataSourceError: Error {
     case fatel(String)

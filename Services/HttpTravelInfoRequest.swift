@@ -14,14 +14,14 @@ class HttpTravelInfoRequest: API {
     init(coordinates: Coordinate) {
         self.usersCoordinates = coordinates
     }
-    
-    
+
     func fetchAPIData(completion: @escaping DataSourceCompletionHandler) {
-        
-        let url = "https://api.tfl.gov.uk/Stoppoint?lat=\(String(describing: usersCoordinates.latitude))&lon=\(String(describing: usersCoordinates.longitude))&stoptypes=NaptanPublicBusCoachTram&radius=300&app_id=25fb89a8&app_key=d14564cd46a7d5cb31bc2c396038d68f"
-        
+        let url = """
+                    https://api.tfl.gov.uk/Stoppoint?lat=\(String(
+                    describing: usersCoordinates.latitude))&lon=\(String(
+                    describing: usersCoordinates.longitude))&stoptypes=NaptanPublicBusCoachTram&radius=300&app_id=25fb89a8&app_key=d14564cd46a7d5cb31bc2c396038d68f
+                    """
         guard let busURL = URL(string: url) else { return }
-        
         let session = URLSession.shared.dataTask(with: busURL) {(data, response, error) in
             if let error = error {
                 DispatchQueue.main.async {
@@ -34,14 +34,13 @@ class HttpTravelInfoRequest: API {
                 }
             return
             }
-      
             do {
                 let jsonDecoder = JSONDecoder()
                 let searchResult = try jsonDecoder.decode(TravellInfomation.self, from: data)
                 let parsedResult = searchResult.stopPoints
-                    DispatchQueue.main.async {
+                DispatchQueue.main.async {
                         completion(Results.success(parsedResult))
-                }
+                    }
             } catch let error {
                     DispatchQueue.main.async {
                         completion(Results.failure(DataSourceError.dataError(error)))
@@ -50,6 +49,5 @@ class HttpTravelInfoRequest: API {
             }
         session.resume()
     }
-    
 }
 
